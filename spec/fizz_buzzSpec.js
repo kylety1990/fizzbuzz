@@ -5,7 +5,7 @@ describe("FizzBuzz", function() {
 
     const result = between(FizzBuzz)
 
-    expect(result).toEqual(true)
+    expect(result).toEqual(3)
   });
 
   it("multiplo of three", function() {
@@ -16,12 +16,25 @@ describe("FizzBuzz", function() {
     expect(result).toEqual('Fizz')
   });
    
+    
+  
+
   function between(FizzBuzz){
     if(FizzBuzz >=1 && FizzBuzz <= 100){
-      return true
+      return FizzBuzz
     }
     else{
-      return false
+      return 'Error de numero'
     }
   }
+
+  function multiploThree(FizzBuzz){
+    if( FizzBuzz % 3 == 0){
+      return 'Fizz';
+    }
+    else {
+      return FizzBuzz;
+    }
+  }
+
 });
