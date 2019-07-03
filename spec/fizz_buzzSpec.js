@@ -45,6 +45,13 @@ describe("FizzBuzz", function() {
     }
   }
 
-  
+  function multiploFive(FizzBuzz){
+    if (FizzBuzz % 5 == 0){
+      return 'Buzz';
+    }
+    else{
+      return FizzBuzz;
+    }
+  }
 
 });
