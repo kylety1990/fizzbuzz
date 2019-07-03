@@ -15,6 +15,14 @@ describe("FizzBuzz", function() {
 
     expect(result).toEqual('Fizz')
   });
+
+  it("multiplo of five", function() {
+    let FizzBuzz = 5;
+
+    const result = multiploFive(FizzBuzz);
+
+    expect(result).toEqual('Buzz')
+  });
    
     
   
@@ -36,5 +44,7 @@ describe("FizzBuzz", function() {
       return FizzBuzz;
     }
   }
+
+  
 
 });
