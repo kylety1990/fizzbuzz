@@ -8,21 +8,16 @@ describe("FizzBuzz", function() {
     expect(result).toEqual(3)
   });
 
-  it("multiplo of three", function() {
-    let FizzBuzz = 3;
+  
 
-    const result = multiploThree(FizzBuzz);
+  it("multiplo of three and five ", function() {
+    let FizzBuzz = 30;
 
-    expect(result).toEqual('Fizz')
+    const result = multiploThreeAndFive(FizzBuzz);
+
+    expect(result).toEqual('FizzBuzz')
   });
 
-  it("multiplo of five", function() {
-    let FizzBuzz = 5;
-
-    const result = multiploFive(FizzBuzz);
-
-    expect(result).toEqual('Buzz')
-  });
    
     
   
@@ -36,22 +31,27 @@ describe("FizzBuzz", function() {
     }
   }
 
-  function multiploThree(FizzBuzz){
-    if( FizzBuzz % 3 == 0){
+  function multiploThreeAndFive(FizzBuzz){
+    if( FizzBuzz % 3 == 0 && FizzBuzz % 5 == 0 ){
+      
+      return 'FizzBuzz'
+    } 
+    else if( FizzBuzz % 3 == 0){
+      
       return 'Fizz';
     }
+    else if( FizzBuzz % 5 == 0){
+      
+      return 'Buzz';
+    }
+    
     else {
+      
       return FizzBuzz;
     }
   }
 
-  function multiploFive(FizzBuzz){
-    if (FizzBuzz % 5 == 0){
-      return 'Buzz';
-    }
-    else{
-      return FizzBuzz;
-    }
-  }
+
+  
 
 });
