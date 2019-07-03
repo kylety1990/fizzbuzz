@@ -51,7 +51,18 @@ describe("FizzBuzz", function() {
     }
   }
 
+/* El parametro First es el numero con el que quieres comenzar y Latest el final,
+con un bucle recorreremos el parametro de comienzo, y los multiplos de 3 dira Fizz,
+los multiplos de 5 dira Buzz y los multiplos de ambos dira FizzBuzz.
+*/
 
+
+let First = 1
+let Latest = 100
+
+for ( First = 1 ; First >=  Latest ; First++){
+  console.log(multiploThreeAndFive(First));
+}
   
 
 });

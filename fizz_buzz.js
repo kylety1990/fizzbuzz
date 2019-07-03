@@ -20,3 +20,11 @@
   }
 
   console.log(multiploThreeAndFive(36))
+
+  let First = 1
+  let Latest = 50
+  
+  for ( First = 1 ; First <=  Latest ; First++){
+    console.log(multiploThreeAndFive(First));
+  }
+    
