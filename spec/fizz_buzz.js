@@ -6,5 +6,13 @@ describe("FizzBuzz", function() {
     const result = between(FizzBuzz)
     expect(result).toEqual(true)
   });
-
+   
+  function between(FizzBuzz){
+    if(FizzBuzz >=1 && FizzBuzz <= 100){
+      return true
+    }
+    else{
+      return false
+    }
+  }
 });
